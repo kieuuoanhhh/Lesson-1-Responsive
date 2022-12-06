@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+}
+.nav_list{
+    display: flex;
+    
+}
+.nav_list li{
+    list-style: none;
+   padding: 10px;
+}
+.nav_pc{
+   
+}
+.nav_list li a{
+    color: #fff;
+    text-decoration: none;
+   
+}
+.nav{
+    display: flex;
+    background-color: #474e68;
+}
+/*Mobile nav*/
+.nav_bars-btn{
+    width: 28px;
+    height: 28px;
+    padding: 15px;
+    display: none;
+    margin-left: 8px;
+}
+.nav_overlay{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 3s ;
+}
+.nav_mobile{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.3s;
+}
+.nav_mobile-list{
+    margin-top: 34px;
+}
+.nav_mobile-list li{
+    list-style: none;
+    padding: 10px ;
+    margin-left:20px ;
+    padding: 20px;
+}
+
+.nav_mobile-link{
+    text-decoration: none;
+    color: #50577a;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.6rem;
+    font-weight: 580;
+    text-transform: uppercase;
+}
+.nav_mobile-link:hover{
+    
+}
+.nav_mobile-close{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top:1rem;
+    right:1rem;
+
+}
+.nav_input{
+    display: none;
+}
+.nav_input:checked ~.nav_overlay{
+    display: block;
+}
+.nav_input:checked ~ .nav_mobile{
+    transform: translateX(0%);
+    opacity:1 ;
+}
+ul li .nav_mobile_dropdown{
+    text-decoration:none ;
+    font-size: 1.3rem;
+    color: #000;
+    margin: -10px;
+}
+.new-info{
+    display: flex;
+}
+.article{
+    display: block;
+    justify-content: center;
+}
+@media(max-width:1023px){
+    .nav_bars-btn{
+        display: block;
+    }
+    .nav_pc{
+        display: none;
+    }
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
