@@ -1,0 +1,126 @@
+*{
+  
+   box-sizing: border-box;
+}
+.main_product{
+    margin-top: 50px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.main_product-img{
+    width: 40%;
+    padding-top: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    margin-right: 20px;
+}
+.main_product-img:hover{
+    opacity: 0.8;
+}
+.main_product-info{
+
+}
+.column-layout{
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+ }
+.column-layout_category{
+    background-color: #a39397;
+}
+.column-layout_category ul li{
+    list-style: none;
+   margin-right: 15px;
+    padding-bottom: 5px;
+}
+.column-layout_list{
+ text-align: center;
+}
+.column-layout_category ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+  
+
+}
+.column-layout_container{
+    display: flex;
+    background-color: #bcc0c9;
+    padding: 12px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+.column-item{
+   width: 25%;
+}
+h2{
+    text-align: center;
+}
+.feature-layout{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.feature-item{
+    padding: 0px 10px 0px 10px;
+}
+.feature-item:first-child{
+    background-color: #cfbce6;
+}
+.feature-item:nth-child(2){
+    background-color: #b5998f;
+}
+.feature-item:nth-child(3){
+    background-color: #e7e0e2;
+}
+/*Mobile & tablet : width < 1024px */
+@media only screen and (max-width: 63.9375em){
+    .main_product{
+        flex-direction :column-reverse;
+    }
+    .main_product-info{
+        width: 100%;
+    }
+    .main_product-desc{
+        display: none;
+    }
+    
+}
+/*Mobile*/
+@media only screen and (max-width:46.1875em ){
+    .main_product-img{
+        width: 95%;
+        padding-top: 95%;
+    }
+    .column-layout_category{
+        display: none;
+    }
+    .column-layout_container{
+        width: 100%;
+    }
+    .column-item{
+        width: 100%;
+        text-align: center;
+    }
+    .feature-layout{
+        flex-direction: column;
+ }
+}
+
+
+@media only screen and (min-width: 46.25em) and (max-width : 63.9375em){
+     /* Product */
+
+    .main_product-img{
+        width: 85%;
+        padding-top: 85%;
+    }
+ /*Course*/
+ .column-item{
+   width: 50%;
+ }
+ 
+}

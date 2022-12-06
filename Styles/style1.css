@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color:#e7e0e2;
+}
+
+.mobile,
+.tablet,
+.pc {
+    margin: auto;
+    font-size: 100px;
+    color: #000;
+    display: none;
+}
+/*Mobile : width < 740px */
+@media only screen and (max-width:46.1875em) {
+    .mobile{
+        display: block;
+    }
+    
+}
+/* Tablet: width >= 740px and wwidth < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .tablet{
+        display: block;
+    }
+}
+/*PC: width >= 1024px)*/
+@media only screen and (min-width: 64em){
+    .pc{
+        display: block;
+    }
+}
+
