@@ -1,0 +1,102 @@
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+:root {
+    --primary-color:#ee4d2d;
+
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --border-color:#dbdbdb;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto',sans-serif;
+    box-sizing: border-box;
+}
+.grid_full-width {
+    width: 100%;
+}
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Animation*/
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    form{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+/* Modal */
+.modal{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.2s;
+    display: none;
+}
+.modal_overlay{
+    position: absolute;/* con modal*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+.modal_body{
+    --grow-from:0.7;
+    --growth-to:1;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    animation: growth linear 0.1s;
+}
+
+/* Button style */
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+  
+}
+.btn.btn--normal:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.btn.btn--primary{
+    background-color: #ee4d2d;
+    color: #fff;
+
+}
+.btn.btn--disabled{
+    cursor: default;
+    background-color: #666;
+}
