@@ -1,0 +1,9 @@
+.item{
+    background-color: orange;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    min-height: 350px;
+    line-height: 30px;
+    margin-top: 16px;
+}
