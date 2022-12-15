@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/BEM.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <button class="btn btn--success"> GO TO NEXT APPROVAL</button>
+        <button class="btn btn--warn"> OK </button>
+        <button class="btn btn--danger"> TRY AGAIN </button>
+
+    </div>
+
+
+
+    <!--BEM action-->
+    <div id="toast">
+        <!--Success-->
+    </div>
+
+     <div>
+        <div onclick="showSuccessToast();" class="btn btn--success">
+            Show success toast
+        </div>
+        <div onclick="showDangerToast();" class="btn btn--danger">
+            Show danger toast
+        </div>
+
+    </div>
+
+
+    <script src="../JS/Bem.js">
+      
+    </script>
+
+</body>
+
+</html>
