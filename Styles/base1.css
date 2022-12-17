@@ -1,4 +1,3 @@
-
 :root {
     --primary-color:#ee4d2d;
 
@@ -10,6 +9,7 @@
     --navbar-height:34px;
     --header-height:120px;
     --header-with-search-height :calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height:46px;
 }
 *{
     box-sizing: inherit;
@@ -20,12 +20,37 @@ html{
     font-family: 'Roboto',sans-serif;
     box-sizing: border-box;
 }
-
+/*Responsive*/
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid_full-width {
+    width: 100%;
+}
 .grid_row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right:-5px ;
 }
-
+/*Test*/
+.grid_column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.667%;
+}
+.grid_column-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.grid_column-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.333%;
+}
 /*Animation*/
 @keyframes fadeIn {
     from{
@@ -81,9 +106,15 @@ html{
     border: none;
     border-radius: 3px;
     font-size: 1.6rem;
-    padding: 0;
+    padding: 0 12px;
     outline: none;
     cursor: pointer;
+    line-height: 1.6rem;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    color: #000;
+    background-color: #fff;
   
 }
 .btn.btn--normal:hover {
@@ -97,4 +128,93 @@ html{
 .btn.btn--disabled{
     cursor: default;
     background-color: #666;
+}
+/* Selection*/
+.select-input{
+    position: relative;
+    height: 34px;
+    min-width: 200px;
+    padding: 0 12px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.select-input_label{
+    font-size: 1.4rem;
+   
+
+}
+.select-input_icon {
+    position: relative;
+    margin: 0 16px 0 138px;
+    font-size: 1.4rem;
+    color: #666;
+    top: 1px;
+}
+.select-input_list{
+  position: absolute;
+  display: inline;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    padding: 10px 30px;
+    list-style: none;
+    background-color: #fff;
+    display: none;
+    
+}
+.select-input_item {
+    padding: 5px 5px;
+}
+.select-input_link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #666;
+    
+}
+.select-input_link:hover{
+    color: #ee4d2d;
+}
+.select-input:hover .select-input_list{
+    display: block;
+}
+/* Pagination */
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: #939393;
+    
+}
+.pagination-item--active .pagination-item_link{
+    background-color: #ee4d2d;
+   color: #fff;
+}
+.pagination-item--active .pagination-item_link:hover{
+    
+    filter: opacity(80%);
+}
+.pagination-item{
+    margin: 0 8px;
+}
+.pagination-item_link{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #666;
+    display: block;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 500;
+}
+.home-product_pagination{
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
