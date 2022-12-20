@@ -144,11 +144,7 @@ html{
 }
 .select-input_label{
     font-size: 1.4rem;
-<<<<<<< HEAD
    
-=======
-
->>>>>>> main
 
 }
 .select-input_icon {
@@ -169,11 +165,7 @@ html{
     list-style: none;
     background-color: #fff;
     display: none;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> main
 }
 .select-input_item {
     padding: 5px 5px;
@@ -182,11 +174,7 @@ html{
     text-decoration: none;
     font-size: 1.3rem;
     color: #666;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> main
 }
 .select-input_link:hover{
     color: #ee4d2d;
@@ -201,22 +189,14 @@ html{
     align-items: center;
     list-style: none;
     color: #939393;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> main
 }
 .pagination-item--active .pagination-item_link{
     background-color: #ee4d2d;
    color: #fff;
 }
 .pagination-item--active .pagination-item_link:hover{
-<<<<<<< HEAD
     
-=======
-
->>>>>>> main
     filter: opacity(80%);
 }
 .pagination-item{
@@ -234,12 +214,9 @@ html{
     border-radius: 2px;
     font-weight: 500;
 }
-<<<<<<< HEAD
 .pagination-item_icon{
 
 }
-=======
->>>>>>> main
 .home-product_pagination{
     margin-top: 50px;
     margin-bottom: 30px;
